@@ -1,0 +1,22 @@
+#container {
+    display: flex;
+    flex-direction: column; 
+}
+
+#userques {
+    list-style: none;
+    align-self: flex-end; /* Align questions to the right */
+    background-color: aquamarine; /* Optional styling */
+    margin: 5px; /* Optional spacing */
+    padding: 5px; /* Optional padding */
+    border-radius: 5px; /* Optional rounded corners */
+}
+
+#answer {
+    list-style: none;
+    align-self: flex-start; /* Align answers to the left */
+    background-color: lightgray; /* Optional styling */
+    margin: 5px; /* Optional spacing */
+    padding: 5px; /* Optional padding */
+    border-radius: 5px; /* Optional rounded corners */
+}
