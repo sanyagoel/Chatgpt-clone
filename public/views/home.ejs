@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>  
-    <div class="maincontainer">
-
-
-        <div class="bottomcontainer">
-            <input type="text" placeholder="Message ChatGPT" id="question" class="question">
-            <button type="submit" onClick= fetchRes(this)><img src="./images/send.png" alt="Button Image" style="width: 22px; height: auto;"></button>
-            
-        </div>
-            
-            <ul id="container">
-            
-            </ul>
-            <p id="mistake">ChatGPT can make mistakes. Check important info.</p>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="sideContainer">
+      <a href="/"> + New Chat</a>
     </div>
-   
-        <script src="bundle.js"></script> <!-- Use the bundled script -->
+    <div class="upgrade">
+      <div class="borderimage">
+        <img src=".././images/lightning-01.png" width:15px height : auto />
+      </div>
+
+      <div class="upgradetext">
+        <a href="/">Upgrade plan</a>
+        <p>Get GPT-4,DALL.E, and more</p>
+      </div>
+    </div>
+
+    <div class="mainContainer">
         
-</body>
+        <ul class="container" id="container">
+               
+        </ul>
+        <div class="mistakes">ChatGPT can make mistakes. Check important info.</div>
+
+    </div>
+
+    <div class="bottomContainer">
+        <input
+        type="text"
+        placeholder="Message ChatGPT"
+        id="question"
+        class="question"
+      />
+      <button type="submit" onClick="fetchRes(this)">
+        <img
+          src="./images/send.png"
+          alt="Button Image"
+          style="width: 22px; height: auto"
+        />
+      </button>
+
+    </div>
+    
+
+    <script src="bundle.js"></script>
+    <!-- Use the bundled script -->
+  </body>
 </html>
-
-

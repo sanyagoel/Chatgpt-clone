@@ -1,4 +1,5 @@
-//require('dotenv').config();
+// require('dotenv').config();
+
 
 async function fetchRes(){
     let message = document.getElementById('question').value;
@@ -7,6 +8,9 @@ async function fetchRes(){
    
     console.log(message);
     container.innerHTML += `<li class="userques">${message}</li>`
+    container.innerHtML += `<li>                </li>`
+
+
     const url = 'https://infinite-gpt.p.rapidapi.com/infinite-gpt';
 const options = {
   method: 'POST',
