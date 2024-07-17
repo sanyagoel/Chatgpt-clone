@@ -6,16 +6,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-        <input type="text" placeholder="Ask a question" id="question">
-        <button type="submit" onClick= fetchRes(this)>Enter</button>
-        <ul id="container">
-            <li id="userques"></li>
-            <li id="answer"></li>
-        </ul>
-      
-        <script src="bundle.js"></script> <!-- Use the bundled script -->
+<body>  
+    <div class="maincontainer">
 
+
+        <div class="bottomcontainer">
+            <input type="text" placeholder="Message ChatGPT" id="question" class="question">
+            <button type="submit" onClick= fetchRes(this)><img src="./images/send.png" alt="Button Image" style="width: 22px; height: auto;"></button>
+            
+        </div>
+            
+            <ul id="container">
+            
+            </ul>
+            <p id="mistake">ChatGPT can make mistakes. Check important info.</p>
+    </div>
+   
+        <script src="bundle.js"></script> <!-- Use the bundled script -->
+        
 </body>
 </html>
 
