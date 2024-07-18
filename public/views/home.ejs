@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ChatGPT</title>
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
@@ -22,31 +22,87 @@
     </div>
 
     <div class="mainContainer">
-        
-        <ul class="container" id="container">
-               
-        </ul>
-        <div class="mistakes">ChatGPT can make mistakes. Check important info.</div>
+      <img id="removed"src="../images/logo.png" style="width: 48px ;height: auto; align-self:center ; margin-top: 18%;"/>
 
+      <ul class="container" id="container">
+        <!-- <li class="userques">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, quidem.
+          Esse voluptatem ab aliquid assumenda sed. Sit, atque! Voluptates,
+          sint.
+        </li> 
+        <li class="answer">
+          <div class="logocontainer">
+            <img class="logochatgpt" src="../images/logo.png"/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+            perferendis eligendi enim ea doloribus itaque? Possimus ab facere ea
+            provident!</p>
+          </div>
+          <button class="answerbuttons" onClick=copyClipboard(this)><img src="../images/logocopy2.png"/></button>
+          <button class="answerbuttons2" onClick="toSpeech(this)"><img src="../images/file.png"/></button>
+
+        </li>
+        <li class="answer">
+          <div class="logocontainer">
+            <img class="logochatgpt" src="../images/logo.png"/>
+            <p>undefined</p>
+          </div>
+          <button class="answerbuttons" onClick=copyClipboard(this)><img src="../images/logocopy2.png"/></button>
+          <button class="answerbuttons2" onClick="toSpeech(this)"><img src="../images/file.png"/></button>
+
+        </li>
+         -->
+      </ul>
+
+      <div class="mistakes">
+        ChatGPT can make mistakes. Check important info.
+      </div>
+
+      <div class="chatgpt">
+        <div class="chatgpttext noto-sans-custom">ChatGPT</div>
+        <div class="chatgptarrow noto-sans-custom">˅</div>
+      </div>
+      <div class="homeOptions noto-sans-custom2" id="homeOptions">
+
+        <button class="homeOptionsSmall noto-sans-custom2" onClick = "addquestion(this)" id="1">
+          <img src="../images/pencil.png" />
+          <p>Thank my interviewer</p>
+        </button>
+
+        <button class="homeOptionsSmall noto-sans-custom2" onClick = "addquestion(this)" id="2">
+          <img src="../images/bulb.png" />
+
+          <p>Morning routine for productivity</p>
+        </button>
+
+        <button class="homeOptionsSmall noto-sans-custom2" onClick = "addquestion(this)" id="3">
+          <img src="../images/plane.png" />
+
+          <p>Plan a relaxing day</p>
+        </button>
+
+        <button class="homeOptionsSmall noto-sans-custom2" onClick = "addquestion(this)" id="4">
+          <img src="../images/study.png" />
+
+          <p>Overcome procrastination</p>
+        </button>
+      </div>
     </div>
 
     <div class="bottomContainer">
-        <input
+      <input
         type="text"
         placeholder="Message ChatGPT"
         id="question"
         class="question"
       />
-      <button type="submit" onClick="fetchRes(this)">
+      <button type="submit" onClick="fetchRes(document.getElementById('question').value)">
         <img
           src="./images/send.png"
           alt="Button Image"
           style="width: 22px; height: auto"
         />
       </button>
-
     </div>
-    
 
     <script src="bundle.js"></script>
     <!-- Use the bundled script -->
